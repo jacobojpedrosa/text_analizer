@@ -38,7 +38,10 @@ def shorter_word(text):
 def word_filter(words, filter_words):
     # Ruben
     """Return  the words list filtered by filter_words"""
-    pass
+
+    words_filtered=[word_filtered for word_filtered in words if str(word_filtered).lower() not in 
+                    [str(filter_word).lower() for filter_word in filter_words]]
+    return words_filtered
 
 def char_counter(text):
     #Jahn
