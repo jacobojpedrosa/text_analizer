@@ -56,6 +56,10 @@ def count_by_lenght(text, l):
     """Return a dict with lengths and quantities of words with this lenghts"""
     pass
 
+def count_by_word(text, l):
+    # Vito
+    """Recibe un texto y devuelve el número total de palabras que contiene dicho texto"""
+    pass
 
 
 
