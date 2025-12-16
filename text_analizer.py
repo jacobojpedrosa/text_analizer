@@ -98,7 +98,9 @@ def char_counter(text):
 def filter_by_word_length(text,l):
     #Juan Antonio
     """Return the list of words with lenght over than l"""
-    pass
+    words = word_list(text)
+    filtered_words_l = [word for word in words if len(word) >= l]
+    return filtered_words_l
 
 def count_by_lenght(text, l=None):
     # Dani Gonzalez
