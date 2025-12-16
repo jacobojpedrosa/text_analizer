@@ -1,4 +1,4 @@
-
+import string
 print("Text Analizer")
 
 
@@ -22,8 +22,16 @@ def unique_words(text):
 
 def word_frequency(text):
     # Sergio Torres
-    """Retorna un diccionario con las palabras y su frecuencia en el texto"""
-    pass
+    "Retorna un diccionario con las palabras y su frecuencia en el texto"
+    frequencies = {}
+    text = text.lower()
+    text = text.translate(str.maketrans('', '', string.punctuation))
+    words = text.split()
+    
+    for word in words:
+        frequencies[word] = frequencies.get(word, 0) + 1
+        
+    return frequencies
 
 def longer_word(text):
     # Noemí
