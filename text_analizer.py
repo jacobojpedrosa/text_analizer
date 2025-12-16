@@ -50,8 +50,8 @@ def filter_by_word_length(text,l):
     #Juan Antonio
     """Return the list of words with lenght over than l"""
     words = word_list(text)
-    filtered_words_2 = [word for word in words if len(word) >= 2]
-    return filtered_words_2
+    filtered_words_l = [word for word in words if len(word) >= l]
+    return filtered_words_l
 
 def count_by_lenght(text, l):
     # Dani Gonzalez
