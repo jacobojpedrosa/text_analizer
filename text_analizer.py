@@ -44,7 +44,18 @@ def char_counter(text):
     #Jahn
     """Return the quantity of chars in the text excluding special 
     charts like ',','.','(',')' and spaces"""
-    pass
+       
+    caracteres_excluidos = [',', '.', '(', ')', ' ']
+    
+    cantidad_valida = 0
+    
+    for caracter in texto: #mira si esta excluido
+        if caracter not in caracteres_excluidos:
+            #Si no está excluido, incrementa el contador
+            cantidad_valida += 1
+            
+    return cantidad_valida
+    
 
 def filter_by_word_length(text,l):
     #Juan Antonio
