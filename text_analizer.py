@@ -1,3 +1,4 @@
+
 print("Text Analizer")
 
 
@@ -48,29 +49,13 @@ def word_frequency(text):
 
 def longer_word(text):
     # Noemí
-    palabras = text.split()  
-    longer_word = palabras[0]  
-    for palabra in palabras:
-        if len(palabra) > len(longer_word):
-            longer_word = palabra
-    return longer_word
-
-
-texto = "Me llamo Noemí y vivo en Huesca"
-print("La palabra más larga es:", longer_word(texto))
+    """Return the longer word in the text"""
+    pass
 
 def shorter_word(text):
-    #Noemí
-    palabras = text.split()  
-    shorter_word = palabras[0]  
-    for palabra in palabras:
-        if len(palabra) < len(shorter_word):
-            shorter_word = palabra
-    return shorter_word
-
-
-texto = "Me llamo Noemí y vivo en Huesca"
-print("La palabra más corta es:", shorter_word(texto))
+    # Noemí
+    """Return the shorter word in the text"""
+    pass
 
 def word_filter(words, filter_words):
     # Ruben
