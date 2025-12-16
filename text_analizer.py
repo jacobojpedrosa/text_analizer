@@ -51,8 +51,9 @@ def filter_by_word_length(text,l):
     """Return the list of words with lenght over than l"""
     pass
 
-def count_by_lenght(text, l):
+def count_by_lenght(text, l=None):
     # Dani Gonzalez
+    """Return a dict with lengths and quantities of words with this lenghts"""
     palabras = text.split()
     diccionario = {}
     for p in palabras:
